@@ -3,8 +3,9 @@ function getElementWidth(content, padding, border) {
     const isContent = perseFloat(content);
     const isPadding = perseFloat(padding) * 2;
     const isBorder = perseFloat(border) * 2;
+    let message = isContent + isPadding + isBorder;
     
-    return isContent + isPadding + isBorder;
+    return message;
 }
 console.log(getElementWidth('50px', '8px', '4px'));
 console.log(getElementWidth('60px', '12px', '8.5px'));
