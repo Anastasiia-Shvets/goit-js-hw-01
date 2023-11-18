@@ -1,8 +1,8 @@
 'use strict';
 function getElementWidth(content, padding, border) {
-    const isContent = perseFloat(content);
-    const isPadding = perseFloat(padding) * 2;
-    const isBorder = perseFloat(border) * 2;
+    const isContent = Number.perseFloat(content);
+    const isPadding = Number.perseFloat(padding) * 2;
+    const isBorder = Number.perseFloat(border) * 2;
     return isContent + isPadding + isBorder;
 }
 
